@@ -5,11 +5,6 @@ db.collection('secretKey').get()
     {
         s = data.docs[0].data().k
         }
-        // data.docs.forEach( doc => {
-        //     key.push(doc.data())
-        //     s = key[0].k
-        //     // console.log(s)
-        // })
 )
 
 
@@ -32,10 +27,3 @@ const getCity = async (city) =>{
 
     return data[0]
 }
-
-// getCity('bhopal')
-//     .then( (data) => { console.log(data) } )
-//     .catch( (err) => { console.log(err) } );
-
-// getWeather('204408')
-//     .then( (data) => console.log(data))
