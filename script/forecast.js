@@ -14,7 +14,7 @@ db.collection('secretKey').get()
 
 
 const getWeather = async (locationId) => {
-    const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    const base = 'https://dataservice.accuweather.com/currentconditions/v1/';
     const query = `${locationId}?apikey=${s}`;
 
     const response = await fetch( base + query );
