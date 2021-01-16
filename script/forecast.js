@@ -1,14 +1,15 @@
 let s = '';
 let key = [];
 db.collection('secretKey').get()
-    .then( (data) => {
-        s = data.docs[0].data().k
-        }
-        // data.docs.forEach( doc => {
-        //     key.push(doc.data())
-        //     s = key[0].k
-        //     console.log(s)
-        // })
+    .then( (data) => 
+    // {
+    //     s = data.docs[0].data().k
+    //     }
+        data.docs.forEach( doc => {
+            key.push(doc.data())
+            s = key[0].k
+            console.log(s)
+        })
 )
 
 
