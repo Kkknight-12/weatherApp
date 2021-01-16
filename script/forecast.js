@@ -2,14 +2,14 @@ let s = '';
 let key = [];
 db.collection('secretKey').get()
     .then( (data) => 
-    // {
-    //     s = data.docs[0].data().k
-    //     }
-        data.docs.forEach( doc => {
-            key.push(doc.data())
-            s = key[0].k
-            console.log(s)
-        })
+    {
+        s = data.docs[0].data().k
+        }
+        // data.docs.forEach( doc => {
+        //     key.push(doc.data())
+        //     s = key[0].k
+        //     // console.log(s)
+        // })
 )
 
 
@@ -24,7 +24,7 @@ const getWeather = async (locationId) => {
 }
 
 const getCity = async (city) =>{
-    const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const base = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${s}&q=${city}`;
 
     const reponse = await fetch( base + query );
