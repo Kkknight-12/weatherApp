@@ -16,50 +16,43 @@
   </head>
   <body>
     <div class="container my-5 mx-auto">
-
       <h1 class="text-muted text-center my-4">Weather Application</h1>
-
       <form action="" class="change-location my-4 text-center text-muted">
         <label for="city">Enter a location for weather information</label>
         <input type="text" name="city" class="form-control p-4" />
       </form>
 
-    <div class="card shadow-lg rounded d-none">
+      <div class="card shadow-lg rounded d-none">
         <img
           src="https://via.placeholder.com/400x300"
-          class="time card-img-top"/>
+          class="time card-img-top"
+        />
         <div class="icon bg-light mx-auto text-center">
-            <img src="" alt="">
+          <img src="" alt="" />
         </div>
-        <div class="text-muted text-uppercase text-center details">
-         
+        <div class="text-muted text-uppercase text-center details"></div>
+      </div>
     </div>
-    </div>
-    </div>
-    </div>
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
- <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script> -->
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyD-rK2rbW1ohycrosdnBE1Qukmoap0wFSg",
-    authDomain: "weather-app-8515b.firebaseapp.com",
-    projectId: "weather-app-8515b",
-    storageBucket: "weather-app-8515b.appspot.com",
-    messagingSenderId: "347530450621",
-    appId: "1:347530450621:web:35739c5c4ef7ec9a3a49d4"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-</script>
-
-
+    <script>
+      // Your web app's Firebase configuration
+      // var firebaseConfig = {
+      //   apiKey: "AIzaSyD-rK2rbW1ohycrosdnBE1Qukmoap0wFSg",
+      //   authDomain: "weather-app-8515b.firebaseapp.com",
+      //   projectId: "weather-app-8515b",
+      //   storageBucket: "weather-app-8515b.appspot.com",
+      //   messagingSenderId: "347530450621",
+      //   appId: "1:347530450621:web:35739c5c4ef7ec9a3a49d4"
+      // };
+      // // Initialize Firebase
+      // firebase.initializeApp(firebaseConfig);
+      // const db = firebase.firestore();
+    </script>
   </body>
 </html>

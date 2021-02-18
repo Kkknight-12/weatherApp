@@ -1,11 +1,12 @@
-let s = '';
-let key = [];
-db.collection('secretKey').get()
-    .then( (data) => 
-    {
-        s = data.docs[0].data().k
-        }
-)
+let s = 't9legpG9USnQv7mzkPz6kTC1npNtdhWp';
+// let s = '';
+// let key = [];
+// db.collection('secretKey').get()
+//     .then( (data) => 
+//     {
+//         s = data.docs[0].data().k
+//         }
+// )
 
 
 const getWeather = async (locationId) => {
