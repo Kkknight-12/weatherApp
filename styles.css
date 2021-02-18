@@ -15,3 +15,10 @@ body {
   width: 100px;
   margin-bottom: -50px;
 }
+
+.inp {
+  display: inline-block;
+  margin: 10px auto;
+  min-width: 375px;
+  /* padding: 50px; */
+}
